@@ -4,7 +4,18 @@ createApp({
     data() {
         return {
             title: 'Lista della spesa',
-            list: ['pane', 'latte', 'mele', 'insalata', 'cioccolata'],
+            list: [],
+
         }
+    },
+    methods: {
+        fetchData() {
+            axios.get('./server.php').then((res) => {
+                console.log(res.data.results)
+            })
+        },
+    },
+    created() {
+        this.fetchData()
     }
 }).mount('#app')
