@@ -20,7 +20,7 @@
         <section>
             <div class="container">
                 <ul>
-                    <li v-for="(item, i) in list" :key='i'>{{ item }}</li>
+                    <li v-for="(item, i) in list" :key='i'>{{ item.text }}</li>
                 </ul>
             </div>
         </section>
