@@ -1,7 +1,7 @@
 <?php
 
 $list_json = file_get_contents('./list.json');
-$list = json_decode($list_json);
+$list = json_decode($list_json, true);
 
 header('Content-Type: application/json');
 

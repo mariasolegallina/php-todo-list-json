@@ -5,6 +5,7 @@ createApp({
         return {
             title: 'Lista della spesa',
             list: [],
+            newItem: '',
 
         }
     },
@@ -15,6 +16,10 @@ createApp({
                 this.list = res.data.results
             })
         },
+
+        storeItem() {
+            console.log('this.newItem', this.newItem)
+        }
     },
     created() {
         this.fetchData()

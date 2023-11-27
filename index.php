@@ -19,6 +19,7 @@
         </section>
         <section>
             <div class="container">
+                <input type="text" v-model="newItem" @keyup.enter="storeItem">    
                 <ul>
                     <li v-for="(item, i) in list" :key='i'>{{ item.text }}</li>
                 </ul>
