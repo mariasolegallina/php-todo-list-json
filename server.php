@@ -1,27 +1,7 @@
 <?php
 
-$list = [
-    [
-    'text' => 'pane',
-    'done' => false
-    ],
-    [
-    'text' => 'latte',
-    'done' => false
-    ],
-    [
-    'text' => 'mele',
-    'done' => true
-    ],
-    [
-    'text' => 'insalata',
-    'done' => true
-    ],
-    [
-        'text' => 'cioccolata',
-        'done' => false
-    ]
-    ];
+$list_json = file_get_contents('./list.json');
+$list = json_decode($list_json);
 
 header('Content-Type: application/json');
 

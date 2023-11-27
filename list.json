@@ -1,0 +1,22 @@
+[
+    {
+        "text": "pane",
+        "done": false
+    },
+    {
+        "text": "latte",
+        "done": false
+    },
+    {
+        "text": "mele",
+        "done": true
+    },
+    {
+        "text": "insalata",
+        "done": true
+    },
+    {
+        "text": "cioccolata",
+        "done": false
+    }
+]
